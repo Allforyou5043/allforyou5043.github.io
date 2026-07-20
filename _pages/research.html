@@ -1,0 +1,222 @@
+---
+layout: archive
+permalink: /research/
+title: ""
+author_profile: true
+---
+
+<!----------------------------------------------------------- STYLES ---------------------------------------------------------------->
+<style>
+    :root {
+      --abstract-button-gray: #f8f8f8;
+      --abstract-content-gray: #f1f1f1;
+    }
+
+    .abstract-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2px .5px;
+      margin: 0;
+      border: none;
+      background-color: var(--abstract-button-gray);
+      cursor: pointer;
+      font-size: 16px;
+      font-family: Roboto Slab, serif;
+      color: black;
+    }
+
+    .abstract-button::before {
+      content: '[+]\00a0';
+      color: hsl(0, 0%, 50%);
+    }
+
+    .abstract-button.active::before {
+      content: '[\2212]\00a0';
+    }
+
+    .abstract-content {
+      width: 100%;
+      background-color: var(--abstract-content-gray);
+      padding: 10px;
+      display: none;
+      font-size: 16px;
+      font-family: Roboto Slab, serif;
+    }
+
+    .abstract-content.show {
+      display: block;
+    }
+</style>
+
+
+<!----------------------------------------------------------- CONTENT ---------------------------------------------------------------->
+
+<h2 id="research-interests">Research Interests</h2>
+
+<p>Asset and Derivatives Pricing, Machine Learning</p>
+
+<h2 id="working-papers">Working Papers</h2>
+
+<p>
+  <a style="text-decoration:none; color:rgb(20, 107, 107); font-weight:bold" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6961900">Volatility Disagreement in the Options Market</a>
+  <br>with <a style="text-decoration:none; color:gray" href="https://sites.google.com/a/georgetown.edu/turan-bali">Turan G. Bali</a> and <a style="text-decoration:none; color:gray" href="https://www.bryankellyacademic.org/">Bryan T. Kelly</a>
+  <br>
+    <button class="abstract-button" data-target="voldis" style="margin-top:8px; margin-right:10px">Abstract</button>
+    <button class="abstract-button" data-target="voldis_pres" style="margin-top:8px">Presentations</button>
+</p>
+<div id="voldis" class="abstract-content">
+  We construct a novel stock-level measure of volatility disagreement as the cross-sectional dispersion of realized variance forecasts built from heterogeneous information sets and machine learning models. Sorting single-name delta-hedged straddles on this measure yields a long-short return of -5.14% per month, robust to known option return predictors and not subsumed by disagreement about first moments or the variance risk premium. A one-standard-deviation increase in volatility disagreement is associated with a 30% rise in option position opening. The cross-sectional patterns of our disagreement measure align with recent theoretical advances of beliefs and pricing of variance claims. Evidence on attention, ownership, and arbitrage costs is more consistent with mispricing than risk compensation.
+</div>
+<div id="voldis_pres" class="abstract-content">
+  AI in Finance Workshop at the University of Liechtenstein
+</div>
+
+<p>
+  <a style="text-decoration:none; color:rgb(20, 107, 107); font-weight:bold" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5386128">In Search of Seasonality in Intraday and Overnight Option Returns</a>
+  <br>with <a style="text-decoration:none; color:gray" href="https://sites.google.com/a/georgetown.edu/turan-bali">Turan G. Bali</a>, <a style="text-decoration:none; color:gray" href="https://sites.google.com/view/agoyal145">Amit Goyal</a>, and <a style="text-decoration:none; color:gray" href="https://www.florian-weigert.com/">Florian Weigert</a>
+  <br>
+    <button class="abstract-button" data-target="seasonality" style="margin-top:8px; margin-right:10px">Abstract</button>
+    <button class="abstract-button" data-target="seasonality_pres" style="margin-top:8px">Presentations</button>
+</p>
+<div id="seasonality" class="abstract-content">
+  We uncover momentum and reversal patterns in half-day option returns that persist for up to at least 20 business days, with economic magnitudes of 0.22% to 0.45% per half-day. Specifically, returns show strong momentum within the same period (e.g., intraday-to-intraday) but reverse sharply across opposite periods (e.g., intraday-to-overnight). These patterns increase over time, are robust to various delta-hedging schemes and option selection criteria, and persist across different subsamples. Momentum and reversal strengthen when market makers actively manage capacity constraints during intraday-overnight transitions, indicating supply-side constraints drive predictability.
+</div>
+<div id="seasonality_pres" class="abstract-content">
+  St.Gallen Financial Economics Workshop (2025); MFA (2026); Leibniz University of Hannover; 19th Risk Forum Paris
+</div>
+
+<p>
+  <a style="text-decoration:none; color:rgb(20, 107, 107); font-weight:bold" href="http://ssrn.com/abstract=3925725">Liquidity Provision to Leveraged ETFs and Equity Options Rebalancing Flows: Evidence from End-of-Day Stock Prices</a>
+  <br>with <a style="text-decoration:none; color:gray" href="http://www.abarbon.com/">Andrea Barbon</a>, <a style="text-decoration:none; color:gray" href="https://www.heinerbeckmeyer.com">Heiner Beckmeyer</a>, and <a style="text-decoration:none; color:gray" href="https://www.andreaburaschi.com/">Andrea Buraschi</a>
+  <br>
+    <button class="abstract-button" data-target="letf" style="margin-top:8px; margin-right:10px">Abstract</button>
+    <button class="abstract-button" data-target="letf_pres" style="margin-top:8px">Presentations</button>
+  <ul style="margin-top: -12px">
+    <li>Media: <a style="text-decoration:none; color:gray" href="https://www.ft.com/content/a3077de6-4b78-4bd2-9ccd-4a870541ff2b">Financial Times</a>, <a style="text-decoration:none; color:gray" href="https://alphaarchitect.com/2022/06/options-hedging-leveraged-etfs-in-market-swings/">Alpha Architect</a></li>
+  </ul>
+</p>
+<div id="letf" class="abstract-content">
+  Rebalancing of leveraged ETFs (LETFs) and delta-hedging of equity options by intermediaries are two distinct and economically significant sources of liquidity demands. We show that they induce end-of-day momentum and mean-reversion in returns. While gamma effects are persistent throughout our sample, LETFs effects have decreased over time. We empirically study these effects and their potential drivers. We find that LETF flows attract more liquidity provision and their effects on prices are shorter-lived. Intermediaries can strategically decide the timing of their delta-hedging, resulting in less predictable flows. This shows the benefits of information disclosure on market liquidity and price distortion.
+</div>
+<div id="letf_pres" class="abstract-content">
+  NFA Annual Meeting (2021); 5th SAFE Market Microstructure Conference (2021); 37th International Conference of the French Finance Association (2021); FMA Annual Meeting (2021); EFMA Annual Meeting (2021); FMA Conference on Derivatives and Volatility (2021); Goldman Sachs STS (2021); Bank of America Merrill Lynch (2021); Morgan Stanley (2021); Société Générale (2022); Fidelity (2022); 13th Annual Hedge Fund Research Conference Paris (2022); MFA Annual Meeting (2022); SFS Cavalcade North America (2022); Hofstra Financial Regulations &amp; Technology (2022); WFA Annual Meeting (2022)
+</div>
+
+<p>
+  <span style="color:rgb(20, 107, 107); font-weight:bold">An Autoencoder Based Factor Model for Option Returns</span>
+  <br><em>Available upon request</em>
+</p>
+
+<h2 id="publications">Publications</h2>
+
+<p>
+  <a style="text-decoration:none; color:rgb(20, 107, 107); font-weight:bold" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4537501">Machine Forecast Disagreement</a>
+  <br>with <a style="text-decoration:none; color:gray" href="https://sites.google.com/a/georgetown.edu/turan-bali">Turan G. Bali</a>, <a style="text-decoration:none; color:gray" href="https://www.bryankellyacademic.org/">Bryan T. Kelly</a>, and <a style="text-decoration:none; color:gray" href="https://som.yale.edu/programs/phd/current-phd-students">Jamil Rahman</a>
+  <br><strong>Forthcoming at the Review of Financial Studies</strong>
+  <br>
+    <button class="abstract-button" data-target="mfd" style="margin-top:8px; margin-right:10px">Abstract</button>
+    <button class="abstract-button" data-target="mfd_pres" style="margin-top:8px">Presentations</button>
+</p>
+<div id="mfd" class="abstract-content">
+  We propose a statistical model of differences in beliefs in which heterogeneous investors are represented as different machine learning model specifications. Each investor forms return forecasts from their own specific model using data inputs that are available to all investors. We measure disagreement as dispersion in forecasts across investor-models. Our measure aligns with extant measures of disagreement (e.g., analyst forecast dispersion), but is a significantly stronger predictor of future returns. We document a large, significant, and highly robust negative cross-sectional relation between belief disagreement and future returns. A decile spread portfolio that is short stocks with high forecast disagreement and long stocks with low disagreement earns a value-weighted alpha of 15% per year. A range of analyses suggest the alpha is mispricing induced by short-sale costs and limits-to-arbitrage.
+</div>
+<div id="mfd_pres" class="abstract-content">
+  Georgetown University (2023); Yale School of Management (2023); University of Konstanz (2023); Norwich Business School (2024); University of Washington 6th Summer Finance Conference; 4th Annual Bristol Financial Markets Conference; 1st Alpine Finance Summit; 21st Annual Bernstein Quantitative Finance Conference; WFA (2025); SFS Cavalcade North America (2025); Inaugural FutureFinTech Federated Conference at the University of Luxembourg (2025); ESCP Paris (2025); Technical University Munich (2025); Heinrich-Heine University Düsseldorf (2025)
+</div>
+
+<p>
+  <a style="text-decoration:none; color:rgb(20, 107, 107); font-weight:bold" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4710335">A Bayesian Stochastic Discount Factor for the Cross-Section of Individual Equity Options</a>
+  <br>with <span style="color:gray">Niclas Käfer</span>, <a style="text-decoration:none; color:gray" href="https://www.florian-weigert.com/">Florian Weigert</a>, and <span style="color:gray">Tobias Wiest</span>
+  <br><strong>Forthcoming at the <a style="text-decoration:none; color:inherit" href="https://doi.org/10.1017/S0022109025102251">Journal of Financial and Quantitative Analysis</a></strong>
+  <br>
+    <button class="abstract-button" data-target="bsdf" style="margin-top:8px; margin-right:10px">Abstract</button>
+    <button class="abstract-button" data-target="bsdf_pres" style="margin-top:8px">Presentations</button>
+</p>
+<div id="bsdf" class="abstract-content">
+  We utilize Bayesian model averaging to estimate a stochastic discount factor (SDF) for single-stock options. A Bayesian model averaging SDF outperforms reduced-form benchmark models in-sample and out-of-sample in pricing option return anomalies and portfolios. We document that the SDF is dense in characteristics with the implied-realized volatility spread, option return momentum, and jump risk emerging as the most likely included factors. Noteworthy, we find that (i) our results remain largely robust after controlling for transaction costs and (ii) characteristics linked to behavioral biases gain in importance for options with high retail trading volume.
+</div>
+<div id="bsdf_pres" class="abstract-content">
+  FMA Volatility &amp; Derivatives Conference (2024); FMA Annual Meeting (2024); SFA Annual Meeting (2024); 2nd Structured Retail Products and Derivatives Conference (2024); University of St.Gallen; SFI Research Days (2024)
+</div>
+
+<p>
+  <a style="text-decoration:none; color:rgb(20, 107, 107); font-weight:bold" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4405852">Option Factor Momentum</a>
+  <br>with <span style="color:gray">Niclas Käfer</span> and <span style="color:gray">Tobias Wiest</span>
+  <br><strong><a style="text-decoration:none; color:inherit" href="https://doi.org/10.1017/S0022109025000225">Journal of Financial and Quantitative Analysis</a></strong>, 2026, 61(1), 32&ndash;60
+  <br>
+    <button class="abstract-button" data-target="ofm" style="margin-top:8px; margin-right:10px">Abstract</button>
+    <button class="abstract-button" data-target="ofm_pres" style="margin-top:8px">Presentations</button>
+</p>
+<div id="ofm" class="abstract-content">
+  We document significant time-series and cross-sectional momentum in 28 equity option factors. Factor momentum is distinct from a static factor portfolio, and prominent option factor models cannot fully explain its returns. Despite high autocorrelation, factor momentum profits are mainly driven by high and persistently different mean factor returns in case of longer formation periods. Option factor momentum fully subsumes option momentum, but not vice versa. Our findings are robust over time, across various market states, and for alternative momentum strategy constructions.
+</div>
+<div id="ofm_pres" class="abstract-content">
+  University of Konstanz (2023); University of St.Gallen (2023); 36th Australasian Finance and Banking Conference (2023); 1st Elsevier Finance Conference at FGV EBAPE in Rio de Janeiro (2023); Frontiers of Factor Investing (2024); FMA Europe (2024); 40th International Conference of the French Finance Association; 2nd Structured Retail Products and Derivatives Conference (2024); FMA Asia Pacific (2024)
+</div>
+
+<p>
+  <a style="text-decoration:none; color:rgb(20, 107, 107); font-weight:bold" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3895984">Option Return Predictability with Machine Learning and Big Data</a>
+  <br>with <a style="text-decoration:none; color:gray" href="https://sites.google.com/a/georgetown.edu/turan-bali/home">Turan G. Bali</a>, <a style="text-decoration:none; color:gray" href="https://www.heinerbeckmeyer.com">Heiner Beckmeyer</a>, and <a style="text-decoration:none; color:gray" href="https://www.florian-weigert.com/">Florian Weigert</a>
+  <br><strong><a style="text-decoration:none; color:inherit" href="https://doi.org/10.1093/rfs/hhad017">Review of Financial Studies</a></strong>, 2023, 36(9)
+  <br>
+    <button class="abstract-button" data-target="orp" style="margin-top:8px; margin-right:10px">Abstract</button>
+    <button class="abstract-button" data-target="orp_pres" style="margin-top:8px">Presentations</button>
+  <ul style="margin-top: -12px">
+    <li>Media: <a style="text-decoration:none; color:gray" href="https://alphaarchitect.com/2021/11/04/using-machine-learning-to-predict-options-returns/">Alpha Architect</a>, <a style="text-decoration:none; color:gray" href="https://www.lextechinstitute.ch/option-return-predictability-with-machine-learning-and-big-data/?lang=en">LexTech Institute</a></li>
+  </ul>
+</p>
+<div id="orp" class="abstract-content">
+  Drawing upon more than 12 million observations over the period from 1996 to 2020, we find that allowing for nonlinearities significantly increases the out-of-sample performance of option and stock characteristics in predicting future option returns. Besides statistical significance, the nonlinear machine learning models generate economically sizeable profits in the long-short portfolios of equity options even after accounting for transaction costs. Although option-based characteristics are the most important standalone predictors, stock-based measures offer substantial incremental predictive power when considered alongside option-based characteristics. Finally, we provide compelling evidence that option return predictability is driven by informational frictions and option mispricing.
+</div>
+<div id="orp_pres" class="abstract-content">
+  Virtual Derivatives Workshop PhD Session (2021); Goldman Sachs STS (2021); Hull Tactical Asset Allocation (2021); BVI-CFR Workshop (2021); University of Münster (2021); 14th Annual Hedge Fund Conference at Imperial College London (2022); SFI Research Days (2022); Federal Reserve Board (2022); Georgetown University (2022); University of Fribourg (2022); University of Liechtenstein (2022); University of Minnesota (2022); Morgan Stanley (2022)
+</div>
+
+<p>
+  <a style="text-decoration:none; color:rgb(20, 107, 107); font-weight:bold" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3409082">Credit Variance Risk Premium</a>
+  <br>with <a style="text-decoration:none; color:gray" href="http://manuelammann.ch/">Manuel Ammann</a>
+  <br><strong><a style="text-decoration:none; color:inherit" href="https://onlinelibrary.wiley.com/doi/10.1111/eufm.12394">European Financial Management</a></strong>, 2023, 29(4)
+  <br>
+    <button class="abstract-button" data-target="cvrp" style="margin-top:8px; margin-right:10px">Abstract</button>
+    <button class="abstract-button" data-target="cvrp_pres" style="margin-top:8px">Presentations</button>
+  <ul style="margin-top: -12px">
+    <li>Media: <a style="text-decoration:none; color:gray" href="https://alphaarchitect.com/2019/08/15/the-variance-risk-premium-is-pervasive/">Alpha Architect</a></li>
+  </ul>
+</p>
+<div id="cvrp" class="abstract-content">
+  This paper studies variance risk premiums in the credit market using a novel data set of swaptions quotes on the CDX North America Investment Grade and High Yield indices. We find that returns of credit variance swaps are negative and economically large, irrespective of the credit rating class. Shorting credit variance swaps yields annualized Sharpe ratios well above their counterparts in other asset classes. The returns remain highly statistically significant when accounting for transaction costs and cannot be explained by established risk-factors and structural model variables. By means of corridor variance swaps, we also dissect the overall variance risk premium into receiver and payer variance risk premiums. We show that credit variance risk premiums are mainly driven by the payer corridor, which is associated with worsening macro-economic conditions.
+</div>
+<div id="cvrp_pres" class="abstract-content">
+  AFA PhD Poster Session (2019); Finance Research Seminar, University of St.Gallen (2019); Finance Research Seminar, University of Konstanz (2019); SoFiE Financial Econometrics Summer School (2019); Paris Financial Management Conference (2019); 26th Annual Meeting of the German Finance Association Doctoral Workshop (2019)
+</div>
+
+<p>
+  <a style="text-decoration:none; color:rgb(20, 107, 107); font-weight:bold" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4217446">Commodity Tail Risk</a>
+  <br>with <a style="text-decoration:none; color:gray" href="http://manuelammann.ch/">Manuel Ammann</a>, <a style="text-decoration:none; color:gray" href="https://www.fcm.uni-hannover.de/de/prokopczuk/">Marcel Prokopczuk</a>, and <a style="text-decoration:none; color:gray" href="https://www.fcm.uni-hannover.de/de/wuersig/">Christoph Würsig</a>
+  <br><strong><a style="text-decoration:none; color:inherit" href="https://onlinelibrary.wiley.com/doi/10.1002/fut.22381">Journal of Futures Markets</a></strong>, 2023, 43(2)
+  <br>
+    <button class="abstract-button" data-target="ctr" style="margin-top:8px; margin-right:10px">Abstract</button>
+    <button class="abstract-button" data-target="ctr_pres" style="margin-top:8px">Presentations</button>
+</p>
+<div id="ctr" class="abstract-content">
+  In this study, we investigate the cross-section of option implied tail risks in commodity markets. In contrast to findings from equity markets, left and right tail risk implied by option markets are both large. Commodity specific variables exert the largest influence on tail risk, while there is no evidence of systematic commodity factors that are linked to tail risk. Additionally, we find strong links to the equity markets, but also co-movements to macroeconomic factors. Left or right tail risks are largely independent of variance risk premiums. Finally, both left and right tail risk are priced in the cross-section of commodity futures returns.
+</div>
+<div id="ctr_pres" class="abstract-content">
+  Finance Seminar at the Leibniz University of Hannover
+</div>
+
+<!----------------------------------------------------------- SCRIPTS ---------------------------------------------------------------->
+<script>
+    const abstractButtons = document.querySelectorAll('.abstract-button');
+
+    abstractButtons.forEach((abstractButton) => {
+      abstractButton.addEventListener('click', (event) => {
+        const button = event.target;
+        button.classList.toggle('active');
+        const abstractContentId = button.dataset.target;
+        const abstractContent = document.getElementById(abstractContentId);
+        abstractContent.classList.toggle('show');
+      })
+    });
+</script>
